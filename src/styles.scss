@@ -1,6 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/normalize.css/normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "PlusJakartaSans-medium";
+  src: url("./assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Medium.ttf") format("truetype");
+
+}
 
 body {
   margin: 0;
+  font-family: 'PlusJakartaSans-medium', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  @apply bg-fontawesome-gray-800
 }
