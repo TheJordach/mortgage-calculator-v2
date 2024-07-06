@@ -1,4 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
+# Avoid your project being littered with annoying .DS_Store files!
+.DS_Store
+.pre
 
 # Compiled output
 /dist
@@ -40,3 +43,6 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+.nx/cache
+.nx/workspace-data
