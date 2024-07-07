@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, Input } from '@angular/core'
 
 @Component({
     selector: 'app-display-result',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core'
 })
 export class DisplayResultComponent {
     // Create an Observable that emits value 42
-    displayResult = 1797.74
+    @Input() displayResult = 1797.74
+    @Input() displayMortgageResult = '0.0'
 }
