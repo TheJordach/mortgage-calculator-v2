@@ -1,1 +1,47 @@
-<p>form works!</p>
+<p class="text-md text-challenge-blue-dark font-bold">Mortgage Calculator</p>
+<a (click)="clearForm()"
+  href="#" class="text-[0.75rem] cursor-pointer hover:text-challenge-blue-dark underline text-challenge-gray-clear"
+  >Clean All</a>
+<form #form class="py-2">
+  <p class="text-challenge-gray-dark  text-[0.75rem] mb-1">Mortgage Amount</p>
+   <input
+      class="w-full px-8 h-9 z-0 rounded font-bold border border-challenge-gray-clear text-[0.75rem] text-challenge-blue-dark"
+
+      type="number"
+      name="loanAmount">
+
+  <p class="text-challenge-gray-dark  text-[0.75rem] mb-1">Mortgage Terms</p>
+  <input
+    class="w-full px-8 h-9 z-0 rounded font-bold border border-challenge-gray-clear text-[0.75rem] text-challenge-blue-dark"
+    type="number"
+    name="loanAmount">
+
+  <p class="text-challenge-gray-dark  text-[0.75rem] mb-1">Interest Rate</p>
+  <input
+    class="w-full px-8 h-9 z-0 rounded font-bold border border-challenge-gray-clear text-[0.75rem] text-challenge-blue-dark"
+    type="number"
+    name="loanAmount">
+
+ <div >
+  <p class="text-challenge-gray-dark  text-[0.75rem] mb-1"> Mortgage Type</p>
+  <label>
+  <input
+    class=""
+    type="radio"
+    name="loanAmount"> Repayment
+     </label>
+  <label>
+  <input
+    class=" "
+    type="radio"
+    name="loanAmount"> Interest Only </label>
+ </div>
+
+  <button
+    class="bg-challenge-indigo w-full px-8 h-9 z-0 rounded-2xl font-bold border border-challenge-gray-clear text-[0.75rem] text-challenge-blue-dark"
+    type="submit"
+    name="loanAmount">
+
+    Calculate
+  </button>
+</form>
