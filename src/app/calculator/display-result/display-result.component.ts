@@ -7,5 +7,5 @@ import { Component } from '@angular/core'
 })
 export class DisplayResultComponent {
     // Create an Observable that emits value 42
-    displayResult = 1
+    displayResult = 1797.74
 }

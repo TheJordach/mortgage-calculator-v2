@@ -22,6 +22,7 @@ module.exports = {
                 'challenge-gray-dark': 'rgba(89, 113, 126, 1.00)',
                 'challenge-gray-light': 'rgba(228, 244, 252, 1.00)',
                 'challenge-gray-clear': 'rgba(120, 149, 167, 1.00)',
+                'challenge-gray-lighted': 'rgba(35, 57, 70, 1.00)',
                 'challenge-indigo': 'rgba(219, 220, 37, 1.00)',
                 'challenge-yellow-clear': 'rgba(250, 250, 224, 1.00)',
                 'challenge-blue-dark': 'rgba(19, 48, 64, 1.00)',

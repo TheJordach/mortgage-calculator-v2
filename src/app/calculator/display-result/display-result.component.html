@@ -1,11 +1,26 @@
-<p>diplay-result works!</p>
-<ng-container *ngIf="displayResult !== 0">
 
+<ng-container *ngIf="displayResult === 0">
   <div class="flex flex-col text-center items-center flex-nowrap">
   <img  [src]="'assets/images/illustration-empty.svg'" alt="calculator illustration">
   <p class="mt-2 mb-4 text-xl">Results shown here</p>
-  <p class="text-sm text-challenge-gray-clear font-light">Complete the form and click "calculate repayment" to see
+  <p class="text-xs text-challenge-gray-clear font-light">Complete the form and click "calculate repayment" to see
     what your monthly repayment amount will be.</p>
   </div>
+</ng-container>
 
+<ng-container *ngIf="displayResult !== 0">
+    <p class="mt-1 mb-2 text-md">Your results</p>
+    <p class="text-[0.55rem] mb-6 text-challenge-gray-clear font-light">
+      Your results are shown below based on the information you provided.
+      To adjust the results, edit the form and click "calculate repayment" again.
+    </p>
+  <div class="border-0 border-t-2 p-4 rounded-lg border-challenge-indigo shadow-md bg-challenge-blue-super-dark mb-4">
+    <p class="text-[0.55rem] mb-2 text-challenge-gray-clear font-light">
+      Your monthly repayment amount </p>
+    <p class="font-bold text-4xl mb-6 text-challenge-indigo"> £ {{ displayResult | number : '1.0-2' }}</p>
+    <hr class="mb-6 border-challenge-gray-lighted">
+    <p class="text-[0.55rem] mb-1 text-challenge-gray-clear font-light">
+      Your total repayment amount </p>
+    <p class="font-bold text-md"> £ {{ displayResult * 12 | number : '1.0-2' }}</p>
+  </div>
 </ng-container>
